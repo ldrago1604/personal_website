@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+
+<form action="/update-note/{{note.id}}" method="POST" style="align-items:center; justify-content:center">
+  <textarea name="update-note" id="update-note" class="form-control">
+    {{note.data}}
+  </textarea>
+  <br />
+  <div align="center">
+    <button type="submit" class="btn btn-primary">UPDATE NOTE</button>
+  </div>
+</form>
+
+{% endblock content %}
